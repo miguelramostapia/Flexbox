@@ -1,0 +1,71 @@
+*{margin 0;
+  padding 0;
+}
+
+main{
+    display: flex;
+
+}
+.principal{
+    width: 100%;
+    text-align: center;
+    padding-top: 150px;
+    background-color:aquamarine ;
+    min-height: 83vh;
+}
+.principal img {
+    width: 250px;
+}
+.contactos {
+    padding: 100px;
+    width: 200px;
+}
+.contactos .contacto{
+    display: flex;
+    min-height: 70px;
+    border-color: black;
+    border-top: solid 1px;
+    padding: 15px;
+}
+.contactos .contacto img {
+    width: 60px;
+    border-radius: 30px;
+}
+.contactos .contacto info{
+    text-align: left;
+    padding: 10px;
+}
+.nuevo-chat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 10vh;
+}
+.nuevo-chat button{
+    padding: 10px;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 10px;
+}
+.contactos nav{
+    display: flex;
+    justify-content: space-between;
+}
+.contactos nav img{
+    width: 60px;
+    border-radius: 30px;
+}
+.contactos nav .perfil{
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+}
+.contactos nav .items{
+    display: flex;
+    align-items: center;
+}
+
+.contactos nav .items i{
+    padding: 5px;
+}

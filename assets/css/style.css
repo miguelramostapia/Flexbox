@@ -1,5 +1,7 @@
-*{margin 0;
-  padding 0;
+* {
+    margin 0;
+    padding 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 main{
@@ -7,18 +9,25 @@ main{
 
 }
 .principal{
+    display: flex;
     width: 100%;
     text-align: center;
-    padding-top: 150px;
     background-color:aquamarine ;
-    min-height: 83vh;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .principal img {
     width: 250px;
 }
 .contactos {
-    padding: 100px;
-    width: 200px;
+/*    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+    border-right: solid 1px;*/
+    width: 300px;
+    padding: 30px;
 }
 .contactos .contacto{
     display: flex;
@@ -27,16 +36,28 @@ main{
     border-top: solid 1px;
     padding: 15px;
 }
+.contactos .contacto:hover{
+    display: flex;
+    min-height: 70px;
+    border-color: black;
+    border-top: solid 1px;
+    padding: 15px;
+    background-color: blueviolet;
+    cursor: pointer;
+}
+
 .contactos .contacto img {
     width: 60px;
     border-radius: 30px;
 }
-.contactos .contacto info{
+
+.contactos .contacto .info{
     text-align: left;
     padding: 10px;
 }
+
 .nuevo-chat{
-    display: flex;
+/*    display: flex;*/
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -51,14 +72,17 @@ main{
 .contactos nav{
     display: flex;
     justify-content: space-between;
+    padding: 15px;
+    height: 50px;
 }
+
 .contactos nav img{
     width: 60px;
     border-radius: 30px;
 }
 .contactos nav .perfil{
     display: flex;
-    font-size: 12px;
+/*    font-size: 12px;*/
     align-items: center;
 }
 .contactos nav .items{
